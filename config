@@ -52,16 +52,8 @@ bindsym $mod+n exec thunar
 # kill focused window
 bindsym $mod+Shift+A kill
 
-# start dmenu (a program launcher)
-# bindsym $mod+d exec --no-startup-id dmenu
-# bindsym $mod+d exec rofi -show run
-# bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Source Code Pro 18"
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -width 10 -show -i -dmenu -font "Clear Sans Regular 18"'
-# bindsym $mod+d exec --no-startup-id dmenu -i -fn "Clear Sans"
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display Ultralight 36"
+# start rofi (a program launcher)
+bindsym $mod+d exec $HOME/.config/i3/rofi.sh
 
 # change focus
 bindsym $mod+Left focus left
@@ -218,6 +210,6 @@ exec --no-startup-id xinput set-prop "$touchpad" "libinput Natural Scrolling Ena
 exec --no-startup-id xinput set-prop "$touchpad" "libinput Disable While Typing Enabled" 0
 
 # Misc
-exec --no-startup-id setxkbmap -option caps:ctrl_modifier
+exec --no-startup-id setxkbmap -option caps:ctrl_modifier # set Capslock as Control
 exec --no-startup-id compton -f
 # exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
