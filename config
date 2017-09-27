@@ -45,6 +45,9 @@ bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle-mu
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Focus follows mouse
+focus_follows_mouse no
+
 # start a terminal
 bindsym $mod+Return exec gnome-terminal --hide-menubar --profile=i3
 bindsym $mod+n exec thunar
