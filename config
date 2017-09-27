@@ -201,7 +201,7 @@ exec_always --no-startup-id xrandr --dpi 192
 exec_always --no-startup-id feh --bg-scale /home/julien/Pictures/wallpaper.jpg
 
 # Suspend/Lock
-bindsym $mod+l exec i3lock -c 333333
+bindsym $mod+l exec lock
 bindsym $mod+m exec i3lock -c 333333 && systemctl suspend
 bindsym $mod+k exec systemctl suspend
 
