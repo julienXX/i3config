@@ -55,8 +55,8 @@ bindsym $mod+n exec thunar
 # kill focused window
 bindsym $mod+Shift+A kill
 
-# start i3-dmenu-desktop (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'San Francisco Display Light-10'"
+# start j4-dmenu-desktop (a program launcher)
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -fn 'San Francisco Display Light-10'"
 
 
 # change focus
