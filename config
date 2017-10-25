@@ -214,6 +214,7 @@ exec --no-startup-id xinput set-prop "$touchpad" "libinput Natural Scrolling Ena
 exec --no-startup-id xinput set-prop "$touchpad" "libinput Disable While Typing Enabled" 0
 
 # Misc
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id setxkbmap -option caps:ctrl_modifier # set Capslock as Control
 exec --no-startup-id compton -f
 # exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
