@@ -33,7 +33,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioNext exec playerctl next
 
 ### Other ###
-# bindsym Print exec scrot -q 100
+bindsym Print exec scrot -q 100
 
 ### Sound ###
 # Raise Volume
@@ -58,6 +58,9 @@ bindsym $mod+Shift+A kill
 # start j4-dmenu-desktop (a program launcher)
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -fn 'San Francisco Display Light-10'"
 
+# change workspace
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 # change focus
 bindsym $mod+Left focus left
