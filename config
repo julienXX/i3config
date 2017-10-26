@@ -33,7 +33,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioNext exec playerctl next
 
 ### Other ###
-bindsym Print exec scrot -q 100
+bindsym Print exec shutter
 
 ### Sound ###
 # Raise Volume
@@ -101,7 +101,7 @@ bindsym $mod+q focus parent
 #bindsym $mod+d focus child
 
 set $wp1    "1. Editor "
-set $wp2    "2. Terminals "
+set $wp2    "2. Term "
 set $wp3    "3. Browser "
 set $wp4    "4. Slack "
 set $wp5    "5. Mail "
@@ -197,6 +197,9 @@ bar {
 }
 
 ########## Custom stuff ##########
+
+# Floating apps
+for_window [class="Shutter"] floating enable
 
 # DPI
 exec_always --no-startup-id xrandr --dpi 192
