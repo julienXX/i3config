@@ -196,16 +196,24 @@ bar {
 	  }
 }
 
+########## Gaps ##########
+
+# for_window [class="^.*"] border pixel 0
+
+gaps inner 6
+gaps outer 10
+
 ########## Custom stuff ##########
 
 # Floating apps
 for_window [class="Shutter"] floating enable
+for_window [class="Corebird"] floating enable
 
 # DPI
 exec_always --no-startup-id xrandr --dpi 192
 
 # Background
-exec_always --no-startup-id feh --bg-scale /home/julien/Pictures/wallpaper.jpg
+# exec_always --no-startup-id feh --bg-scale /home/julien/Pictures/wallpaper.jpg
 
 # Suspend/Lock
 bindsym $mod+l exec lock
@@ -222,5 +230,5 @@ exec --no-startup-id xinput set-prop "$touchpad" "libinput Disable While Typing 
 # Misc
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id setxkbmap -option caps:ctrl_modifier # set Capslock as Control
-exec --no-startup-id compton -f
+exec --no-startup-id compton --config ~/.compton.conf -b
 # exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
