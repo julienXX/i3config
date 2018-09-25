@@ -94,7 +94,7 @@ bindsym $mod+q focus parent
 
 set $wp1    "1. Editor "
 set $wp2    "2. Term "
-set $wp3    "3. Browser "
+set $wp3    "3. Browser "
 set $wp4    "4. Slack "
 set $wp5    "5. Mail "
 set $wp6    "6. Toots "
